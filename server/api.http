@@ -1,0 +1,41 @@
+### Login
+POST http://localhost:3001/api/sessions
+Content-Type :  application/json
+
+{   
+    "username": "f.russo123@studenti.polito.it",
+    "password": "cane"
+}
+
+###
+DELETE http://localhost:3001/api/sessions/current
+
+###
+GET http://localhost:3001/api/sessions/current
+
+###
+GET  http://localhost:3001/api/backs
+
+###
+GET  http://localhost:3001/api/memes
+
+###
+GET http://localhost:3001/api/memes/filter=public
+
+###
+DELETE http://localhost:3001/api/memes/47
+
+###
+POST http://localhost:3001/api/memes
+Content-Type: application/json
+
+{
+"background": 3,
+"color": "color-white",
+"font": "font-anton",
+"sentence1": " cx",
+"sentence2": "",
+"sentence3": "",
+"title": "hgfdsa",
+"visibility": "protected"
+}
